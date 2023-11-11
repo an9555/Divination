@@ -1,0 +1,47 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("photo.jpg");
+	background-size: cover; 
+	background-position: center; 
+	margin: 0; 
+	box-sizing: border-box; 
+  }
+
+button {
+	text-decoration: none;
+	color: #102e5c;
+	font-family: sans-serif;
+	font-size: 25px;
+	border: 3px solid #102e5c;
+	background-color:#f3c5b6;
+	padding: 40px 80px;
+	position: relative;
+	transition: all 1s;
+	overflow: hidden;
+	
+}
+
+button:before {
+	content: '天官賜福,百無禁忌';
+	color: #f3c5b6;
+	background-color: #102e5c;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	transform: translateY(-100%);
+	transition:all .5s;
+
+}
+
+button:hover:before {
+	transform: translateY(0);
+
+}

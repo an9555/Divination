@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>占卜.com</title>
+                
+    <!-- OUR STYLESHEET -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    
+</head>
+
+<body>
+
+
+  <button onclick="randomLink()">請專心默想你心裡的問題</button>
+
+
+  <script>
+    function randomLink() {
+  
+      const randomNumber = Math.floor(Math.random() * 64);
+
+      const link = `https://www.8bei8.com/book/zhouyi_${randomNumber}.html`;
+      
+      window.open(link, '_blank');
+    }
+    </script>
+    </body>
+</html>
+
+
